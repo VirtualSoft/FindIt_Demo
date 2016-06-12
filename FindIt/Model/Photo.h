@@ -10,9 +10,10 @@
 #import "DataHandler.h"
 
 @interface Photo : NSObject<DataRequester>
-@property(assign) long photoId;
+@property(strong) NSString* photoId;
 @property(strong) NSString* url;
 @property(assign) int state;
 
 -(id)initWithId:(NSString*) anId andUrl:(NSString*) anUrl;
 @end
+	
